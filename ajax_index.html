@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Php dischi</title>
+</head>
+<body>
+
+    <!-- Header area -->
+    <header>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/1280px-Spotify_logo_without_text.svg.png" alt="spotify logo">
+        </div>
+    </header>
+    
+    <!-- Main area -->
+    <main id="my-app">
+        <div class="albums-container">
+
+            <!-- For each album in the database print a card inside the albums-container -->
+                <div v-for="album in albums" class="album-card">
+                
+                    <div class="album-poster">
+                        <img :src="album.poster" :alt="album.title">
+                    </div>
+
+                    <div class="album-text">
+                        <h3> {{album.title}} </h3>
+
+                        <h4> {{album.author}} <h4>
+                            
+                        <h4> {{album.year}} </h4>
+                    </div>
+                </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
