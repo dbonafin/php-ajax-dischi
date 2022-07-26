@@ -1,19 +1,70 @@
 /* 
-Font 
-https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap
-
-Background color of the page
-$bg-primary-color: #1e2d3c;
-
-Background color of the header and the album cards
-$bg-secondary-color: #2d3a47;
-
-Name of the album color
-$album-name-color: white;
-
-Artist name and release year 
-$album-infos-color: #7f7974;
-
 Spotify green elements
 $green-elements: #19D861;
 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common */
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+/* Header */
+header {
+    background-color: #2d3a47;
+}
+
+.logo {
+    width: 60px;
+    padding: 10px;
+}
+
+/* Main */
+main {
+    height: calc(100vh - 60px);
+    background-color: #1e2d3c;
+}
+
+.albums-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+.album-card {
+    width: 180px;
+    height: 300px;
+    margin: 10px;
+    background-color: #2d3a47;
+}
+
+.album-poster {
+    width: 140px;
+    margin: 0 auto;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.album-text {
+    padding: 0 10px;
+    text-align: center;
+}
+
+.album-text h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.album-text h4 {
+    color: #7f7974;
+}
