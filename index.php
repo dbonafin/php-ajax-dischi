@@ -40,11 +40,14 @@
                         <h4>
                             <?php echo $album['author']; ?>
                         </h4>
+                        <h4>
+                            <?php echo $album['year']; ?>
+                        </h4>
                     </div>
 
                 </div>
             <?php } ?>
-            
+
         </div>
     </main>
 </body>
